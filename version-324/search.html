@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>影片搜索筛选-高清国产影视免费在线看-高清影视大全</title>
+    <meta name="description" content="高清影视大全搜索页，支持按片名、类型、地区、年份和标签筛选电影电视剧资源。" />
+    <meta name="keywords" content="高清国产影视免费在线看_电影电视剧大全资源-高清影视大全,国产,视频,免费,在线观看,高清,影视大全,搜索,筛选" />
+    <meta name="renderer" content="webkit" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="./assets/css/site.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-inner">
+            <a class="brand" href="./index.html" aria-label="高清影视大全">
+                <span class="brand-mark">影</span>
+                <span class="brand-text">高清影视大全</span>
+            </a>
+            <nav class="desktop-nav" aria-label="主导航">
+                    <a class="nav-link" href="./index.html">首页</a>
+                    <a class="nav-link" href="./movies-page-1.html">全部影片</a>
+                    <a class="nav-link" href="./categories.html">分类</a>
+                    <a class="nav-link" href="./ranking.html">排行榜</a>
+                    <a class="nav-link is-active" href="./search.html">搜索</a>
+            </nav>
+            <form class="header-search js-search-form" action="./search.html" method="get">
+                <input type="search" name="q" placeholder="搜索影片、类型、地区" autocomplete="off" />
+                <button type="submit" aria-label="搜索">搜索</button>
+            </form>
+            <button class="mobile-menu-button js-menu-button" type="button" aria-label="打开导航">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <div class="mobile-panel js-mobile-panel">
+            <form class="mobile-search js-search-form" action="./search.html" method="get">
+                <input type="search" name="q" placeholder="搜索影片" autocomplete="off" />
+                <button type="submit">搜索</button>
+            </form>
+            <nav aria-label="移动端导航">
+                    <a class="mobile-link" href="./index.html">首页</a>
+                    <a class="mobile-link" href="./movies-page-1.html">全部影片</a>
+                    <a class="mobile-link" href="./categories.html">分类</a>
+                    <a class="mobile-link" href="./ranking.html">排行榜</a>
+                    <a class="mobile-link is-active" href="./search.html">搜索</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="page-hero search-hero">
+            <div class="page-hero-inner">
+                <p class="section-kicker">Search</p>
+                <h1>影片搜索与筛选</h1>
+                <p>可按影片标题、简介、类型、地区、年份、标签搜索 2000 部影片资源。</p>
+            </div>
+        </section>
+        <section class="content-section">
+            <div class="search-panel">
+                <input id="searchInput" type="search" placeholder="输入影片名、地区、类型或标签" autocomplete="off" />
+                <select id="typeFilter">
+                    <option value="">全部类型</option>
+                    <option value="Movie">Movie</option><option value="OVA">OVA</option><option value="TV Series">TV Series</option><option value="TV剧集">TV剧集</option><option value="TV动画">TV动画</option><option value="剧集">剧集</option><option value="剧集 / 动画">剧集 / 动画</option><option value="剧集 / 真人秀（伪纪录片）">剧集 / 真人秀（伪纪录片）</option><option value="剧集 / 限定剧">剧集 / 限定剧</option><option value="动态漫画">动态漫画</option><option value="动漫">动漫</option><option value="动漫 / TV系列">动漫 / TV系列</option><option value="动画">动画</option><option value="动画剧集">动画剧集</option><option value="动画剧集 (11集)">动画剧集 (11集)</option><option value="动画特典">动画特典</option><option value="动画电影">动画电影</option><option value="动画短片">动画短片</option><option value="演唱会电影">演唱会电影</option><option value="电影">电影</option><option value="电影 / 动画">电影 / 动画</option><option value="电影 / 电视电影">电影 / 电视电影</option><option value="电影 / 纪录片">电影 / 纪录片</option><option value="电影 喜剧 / 剧情">电影 喜剧 / 剧情</option><option value="电影/动画">电影/动画</option><option value="电影/纪录">电影/纪录</option><option value="电影/纪录片">电影/纪录片</option><option value="电视剧">电视剧</option><option value="电视剧集">电视剧集</option><option value="电视电影">电视电影</option><option value="真人秀">真人秀</option><option value="真人秀 / 剧集">真人秀 / 剧集</option>
+                </select>
+                <select id="yearFilter">
+                    <option value="">全部年份</option>
+                    <option value="2029">2029</option><option value="2028">2028</option><option value="2027">2027</option><option value="2026">2026</option><option value="2025">2025</option><option value="2024">2024</option><option value="2023">2023</option><option value="2022">2022</option><option value="2021">2021</option><option value="2020">2020</option><option value="2019">2019</option><option value="2018">2018</option><option value="2017">2017</option><option value="2016">2016</option><option value="2015">2015</option><option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option><option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option><option value="2002">2002</option><option value="2001">2001</option><option value="2000">2000</option><option value="1999">1999</option><option value="1998">1998</option>
+                </select>
+                <select id="regionFilter">
+                    <option value="">全部地区</option>
+                    <option value="中东/法国">中东/法国</option><option value="中国">中国</option><option value="中国内地">中国内地</option><option value="中国台湾">中国台湾</option><option value="中国台湾 / 中国大陆">中国台湾 / 中国大陆</option><option value="中国台湾 / 日本">中国台湾 / 日本</option><option value="中国台湾, 日本">中国台湾, 日本</option><option value="中国大陆">中国大陆</option><option value="中国大陆 (配音版)">中国大陆 (配音版)</option><option value="中国大陆 / 中国台湾">中国大陆 / 中国台湾</option><option value="中国大陆 / 意大利">中国大陆 / 意大利</option><option value="中国大陆 / 挪威">中国大陆 / 挪威</option><option value="中国大陆 / 泰国">中国大陆 / 泰国</option><option value="中国大陆 / 香港">中国大陆 / 香港</option><option value="中国澳门">中国澳门</option><option value="中国澳门 / 葡萄牙">中国澳门 / 葡萄牙</option><option value="中国香港">中国香港</option><option value="中国香港 / 中国大陆">中国香港 / 中国大陆</option><option value="中国香港 / 台湾">中国香港 / 台湾</option><option value="中国香港 / 泰国">中国香港 / 泰国</option><option value="中国香港 / 马来西亚">中国香港 / 马来西亚</option><option value="中国香港/中国大陆">中国香港/中国大陆</option><option value="丹麦">丹麦</option><option value="丹麦 / 德国">丹麦 / 德国</option><option value="乌克兰">乌克兰</option><option value="乌克兰 / 美国">乌克兰 / 美国</option><option value="亚美尼亚 / 俄罗斯">亚美尼亚 / 俄罗斯</option><option value="伊朗 / 法国">伊朗 / 法国</option><option value="俄罗斯">俄罗斯</option><option value="俄罗斯 / 乌克兰">俄罗斯 / 乌克兰</option><option value="俄罗斯 / 英国">俄罗斯 / 英国</option><option value="克罗地亚">克罗地亚</option>
+                </select>
+                <button id="resetSearch" type="button">重置</button>
+            </div>
+            <div class="section-heading">
+                <div>
+                    <p class="section-kicker">Results</p>
+                    <h2 id="searchCount">搜索结果</h2>
+                </div>
+                <a href="./movies-page-1.html">全部片库</a>
+            </div>
+            <div class="movie-grid" id="searchResults"></div>
+            <div class="search-empty" id="searchEmpty" hidden>
+                <h2>没有找到匹配影片</h2>
+                <p>换一个关键词或清空筛选条件后再浏览。</p>
+            </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <a class="brand brand-footer" href="./index.html">
+                    <span class="brand-mark">影</span>
+                    <span class="brand-text">高清影视大全</span>
+                </a>
+                <p>高清国产影视免费在线观看平台，拥有电影电视剧大全资源。本站内容全面，更新及时，提供超清画质的国产电影、电视剧观看服务。</p>
+            </div>
+            <div class="footer-column">
+                <h2>站内导航</h2>
+                <ul>
+                    <li><a href="./index.html">首页</a></li>
+                    <li><a href="./movies-page-1.html">全部影片</a></li>
+                    <li><a href="./categories.html">分类总览</a></li>
+                    <li><a href="./ranking.html">影视排行榜</a></li>
+                    <li><a href="./search.html">搜索筛选</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h2>热门分类</h2>
+                <ul>
+                    <li><a href="./category-cinema.html">高清精选</a></li>
+                    <li><a href="./category-hot.html">热播推荐</a></li>
+                    <li><a href="./category-new.html">年度新片</a></li>
+                    <li><a href="./category-movie.html">电影放映厅</a></li>
+                    <li><a href="./category-series.html">剧集连播</a></li>
+                    <li><a href="./category-suspense.html">悬疑惊悚</a></li>
+                    <li><a href="./category-action.html">动作犯罪</a></li>
+                    <li><a href="./category-romance.html">爱情喜剧</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h2>内容特色</h2>
+                <p>电影电视剧大全资源聚合，按分类、榜单、详情页和相关推荐构建清晰内链。</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 高清影视大全 · 高清国产影视免费在线看</p>
+        </div>
+    </footer>
+    <script src="./assets/js/site.js" defer></script>
+    <script src="./assets/js/search-data.js" defer></script>
+    <script src="./assets/js/search.js" defer></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?95df08bc498ee0333203841fd6fee1eb";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
